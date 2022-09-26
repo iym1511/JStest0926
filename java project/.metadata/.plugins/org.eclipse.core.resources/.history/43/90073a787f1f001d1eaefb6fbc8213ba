@@ -1,0 +1,12 @@
+
+public class ScoresMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+		Scores s = new Scores();
+		s.arvg();
+	}
+
+}

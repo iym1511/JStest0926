@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="com.sun.java_cup.internal.runtime.Scanner"/>
+    <fullyQualifiedTypeName name="chap07_Object.Student"/>
+    <fullyQualifiedTypeName name="chap07_2_getset.AnimalCard"/>
+    <fullyQualifiedTypeName name="chap07_2_getset.Order"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="chap07_2_getset.AnimalCardArray"/>
+    <fullyQualifiedTypeName name="BoardGame"/>
+    <fullyQualifiedTypeName name="Book.BookMain"/>
+    <fullyQualifiedTypeName name="Book.Book"/>
+    <fullyQualifiedTypeName name="chap08_polymo.Worker"/>
+    <fullyQualifiedTypeName name="Chap09_interface.CarInterface"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="jdk.internal.util.xml.impl.Input"/>
+</qualifiedTypeNameHistroy>

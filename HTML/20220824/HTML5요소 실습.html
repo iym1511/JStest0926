@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><!--form 사용자값받아 서버로 넘겨주는거-->
+    <form action="./예약완료.html"><!--form쓰면 버튼눌렀을때 빈칸알림크게띄워줌-->
+    <h1>식당예약</h1>
+    <p>식당예약 날짜와 시간을 입력해주세요</p>
+    <input type="date" name="date" value="2022-08-24" max="2022-08-31" min="2022-08-24">
+    <input type="time" name="time" value="10:00" max="18:40" min="9:40"><br>
+    <label for="">이메일</label>
+    <input type="email">
+    <p>예약정보는 위의 이메일로 보내드리겠습니다</p>
+    <input type="submit" name="btn" value="전송">
+    </form>
+</body>
+</html>

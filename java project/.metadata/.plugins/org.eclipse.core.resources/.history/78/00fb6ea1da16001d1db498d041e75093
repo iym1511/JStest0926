@@ -1,0 +1,24 @@
+package chap07_Object;
+
+public class RandomUD {
+
+	private int num;
+	private int usernum;
+	
+	//check user 유저한태 값받아옴 cheakNum은 값 구분
+	
+	void getRandomNum(){
+		System.out.println((Math.random()*100)+1);
+	}
+	
+	int checkUserGuess(int usernum) {
+		return this.usernum = usernum;
+	}
+	
+	void checkNum() {
+		if(this.getRandomNum() <this.num) {
+			
+		}
+	}
+	
+}

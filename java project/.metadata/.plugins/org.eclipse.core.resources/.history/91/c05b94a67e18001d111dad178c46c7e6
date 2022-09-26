@@ -1,0 +1,20 @@
+package Bank;
+
+public class BankAcc {
+	public String bankNum;
+	private int money;
+	
+	public BankAcc(String s) {
+		this.money = 0;
+		this.bankNum = s;
+	}
+	public int getMoney() {
+		return 0;
+	}
+	private void inMoney(int a) {
+		
+	}
+	private void outMoney(int a) {
+		
+	}
+}

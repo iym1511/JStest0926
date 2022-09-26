@@ -1,0 +1,19 @@
+package Bank;
+
+public class BankAcc {
+	public String bankNum;
+	private int money;
+	
+	public BankAcc(String s) {
+		money = 0;
+	}
+	public void getMoney() {
+		
+	}
+	private void inMoney(int a) {
+		
+	}
+	private void outMoney(int a) {
+		
+	}
+}

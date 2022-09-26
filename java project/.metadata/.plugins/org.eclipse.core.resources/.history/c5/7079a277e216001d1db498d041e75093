@@ -1,0 +1,9 @@
+package chap07_Object;
+
+public class RandomUDclass {
+	
+	// 필드
+	private int num;
+	private int usernum;
+	// 메소드
+}

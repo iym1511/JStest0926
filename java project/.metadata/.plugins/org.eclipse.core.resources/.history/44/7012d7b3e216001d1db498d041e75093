@@ -1,0 +1,13 @@
+package chap07_Object;
+
+public class RandomUDclass {
+	
+	// 필드
+	private int num; // 랜덤한 수
+	private int usernum; // 유저입력 수
+	
+	// 메소드
+	void checkRandom() {
+		this.num = num;
+	}
+}

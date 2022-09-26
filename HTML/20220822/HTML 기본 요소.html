@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--style의 값을 동시에 주기위해 head에 작성-->
+    <style>
+        td,th { border: 1px solid black;}
+    </style>
+
+
+</head>
+<body style="background: url(./img.jpg);">
+    <a name="bookmark"></a> <!--링크 클릭시 상단으로 이동 (책갈피)-->
+    <h1 style="color: rgb(236, 205, 205);">스타일 - Style속성</h1>
+    <p style="color : blue;">p태그에 스타일 지정</p>
+    <p><span style="color : red; background-color: yellow;" >span 태그</span>에만 스타일 지정</p>
+    <p style="background-color: lightblue;">p태그에 백그라운드 컬러 지정</p>
+    <hr>
+    <h1 style="color : white;">링크</h1>
+    <!--웹사이트 연결-->
+    <a href="http://www.naver.com" target="_blank">네이버 바로가기</a>
+                                    <!--target="_blank" = 새 창에서 링크열림-->
+    <!-- 같은 파일내에 있는 html문서로 이동 -->
+    <a href="./HTML의텍스트요소.html">HTML의 텍스트요소 html파일</a>
+
+    <!-- 한페이지에 책갈피 연결 -->
+    <a href="#bookmark">가장 위로 올라갑니다</a>
+
+    <hr>
+    <h1>이미지</h1>
+    <img src="https://cdn.pixabay.com/photo/2017/08/31/06/00/bmw-2699554_960_720.jpg" alt="차 이미지"
+    width = "500">
+    <img src="/bmw2.jpg" alt="일러스트1" width="500" >
+    <p style="color : white"> 
+        이미지태그는 src에 주소를 작성하여 이미지를 가져올수있고
+        파일주소를 작성하여 이미지를 가져올수 있다
+        파일주소를 통해 가져올때 .(현재위치)에서 가져오거나
+        ..(상위 폴더)에서 가져 올 수있다
+    </p>
+    <!-- 실습. 링크안에 이미지를 넣어서 
+        이미지를 클릭하면 다음홈페이지로 이동할수있게하세요 
+        이미지에 style="border: 3px solid black;" 스타일 속성 추가
+    -->
+    <a href="http://www.daum.net" target="_blank"><img src="./daum.jpg" width = "300" style="border: 3px solid black;"></a>
+   
+    <hr>
+    <h1>리스트</h1>
+    <ol>
+        <li>순서가 없는 리스트입니다</li>
+        <li>아래 내용을 계속해서 적을 수 있습니다</li>
+    </ol>
+
+    <dl>
+        <dt>정의</dt>
+        <dd>단어의 세부내용</dd>
+        <dt>정의</dt>
+        <dd>단어의 세부내용</dd>
+    </dl>
+
+    <hr>
+    <h1>테이블</h1>
+    <table style="background-color: white;">
+        <tr>
+            <th>제목</th>
+            <th>두번째 내용</th>
+        </tr>
+        <tr>
+            <td>내용</td>
+            <td>두번째 내용</td>
+        </tr>
+        <tr>
+            <!-- 자신의 오른쪽 셀과 합친다 -->
+            <td colspan="2">열합치기</td>
+        </tr>
+        <tr>
+            <!-- 자신의 아래쪽 셀과 합친다 -->
+            <td rowspan="2">행합치기</td>
+            <td>두번째 내용</td>
+        </tr>
+        <tr>
+            <td>두번째 내용</td>
+        </tr>
+    </table>
+
+    <!-- 테이블 연습 -->
+    <hr>
+    <table style="background-color: white;">
+    <tr>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td colspan="3">4</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td colspan="2">6</td>
+    </tr>
+    </table><!-- 이렇게 복잡하게까진 안함 하는거 익힘용-->
+
+
+    <hr>
+    <!-- 실습 -->
+    <h1>메뉴판</h1>
+    <ul>
+        <li>커피</li>
+        <li>차</li>
+        <li>우유</li>
+    </ul>
+    <h2>안내</h2>
+    <h3>매장을 이용해주시는 고객분들은 아래절차를 따라 주세요</h3>
+    <ol>
+        <li>체온기 앞에서 체온을 잽니다</li>
+        <li>안심콜로 방문 등록을 합니다</li>
+        <li>비치된 손소독제로 손을 닦습니다</li>
+    </ol>
+
+
+
+
+    
+
+
+  
+</body>
+</html>

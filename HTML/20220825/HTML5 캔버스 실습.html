@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="200" style="border: 1px solid red;">
+
+    </canvas>
+
+    <script>
+        // html에서 id 값을 통해 요소를 가져온다
+        let paper = document.getElementById("myCanvas");
+       // context를 통해서 그림을 그릴수 있다.
+       let context = paper.getContext("2d");
+        // 리니어가 오른쪽에서 왼쪽으로 그라디언트
+        // Radial 은 중앙에서부터 그라디언트
+        let grd = context.createLinearGradient(0, 0, 200,0);
+        grd.addColorStop(0, "blue");
+        grd.addColorStop(1, "white");
+
+        context.fillStyle = grd;
+        context.fillRect(10,10,200,100); 
+
+        context.fillStyle="#ffffff";
+        // 현재 컴퓨터에 설치되어있는 길꼴을 화면에 출력할수 있다
+        context.font = "30px Algerian"; 
+        context.fillText("CANVAS", 25, 50);
+        
+    </script>
+</body>
+</html>

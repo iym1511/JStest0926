@@ -1,0 +1,17 @@
+
+public class BoardGame {
+	
+	private int peopleNum;
+	
+	public BoardGame() {
+		this.peopleNum=0;
+	}
+	public int setBoardGame() {
+		return this.peopleNum;
+	}
+	
+	public void play() {
+		System.out.println("게임을 시작합니다.");
+	}
+
+}

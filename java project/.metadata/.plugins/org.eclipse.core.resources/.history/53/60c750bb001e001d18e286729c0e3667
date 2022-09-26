@@ -1,0 +1,16 @@
+package Chap09_interface;
+
+public class Student implements Comparable{
+
+	private String name;
+	private int grade;
+	
+	@Override
+	public int compareTo(Object otherObject) {
+		// TODO Auto-generated method stub
+		// 비교하는 메소드 - Student객체를 받아와서 그 객체안의 grade를 비교하는 메소드
+		return 0;
+	}
+
+	
+}

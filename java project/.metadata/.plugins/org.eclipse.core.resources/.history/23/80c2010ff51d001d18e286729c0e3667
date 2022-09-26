@@ -1,0 +1,11 @@
+package Chap09_interface;
+
+public class Truck implements CarInterface{
+
+	@Override // 추상메소드꺼 가져온거
+	public void printCar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

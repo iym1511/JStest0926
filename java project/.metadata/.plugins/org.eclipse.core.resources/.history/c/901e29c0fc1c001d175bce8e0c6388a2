@@ -1,0 +1,21 @@
+
+public class BoardGame extends Game{
+	
+	private int peopleNum;
+	
+	public BoardGame() {
+		this.peopleNum=0;
+	}
+	public BoardGame(int peopleNum, String gameTitle) {
+		this.peopleNum=peopleNum;
+		this.gameTitle=gameTitle;
+	}
+	\
+	public void play() {
+		System.out.println(this.peopleNum+"명이서 "+this.gameTitle+"게임을 시작합니다");
+	}
+	
+	public void end() {
+		System.out.println(this.gameTitle+"게임을 종료합니다");
+	}
+}

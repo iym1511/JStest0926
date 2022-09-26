@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .msg{
+            /*박스크기 증,감*/
+            /*패딩은 안쪽*/
+            /*마진은 바깥*/
+            box-sizing: border-box; /* 열 붕괴 등 예방*/
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <h1>기사 제목입니다</h1><!--header에 묶어서 쓰는게좋고-->
+    </header>
+    <main>
+    <figure><!--메인으로 두는게좋고-->
+        <table>
+            <tr>
+                <td>
+                    <img src="https://cdn.pixabay.com/photo/2016/04/24/10/48/sports-car-1349139_960_720.jpg" alt="비엠" width="500">
+                    <figcaption >
+                        위의 이미지는 <a href="https://pixabay.com/ko/">픽사베이</a>에서 제공받았습니다.
+                    </figcaption>
+                </td>
+                <td>
+                    <img src="/bmw2.jpg" width="500" alt="">
+                    <figcaption >
+                        위의 이미지는 <a href="https://pixabay.com/ko/">픽사베이</a>에서 제공받았습니다.
+                    </figcaption>
+                </td>
+            </tr>
+        </table>
+    </figure>
+
+    <p>
+        기사 내용입니다 <br>
+        원하시는 기사를 넣으셔도 됩니다.
+    </p>
+    <p><i>작성자 홍길동</i></p>
+
+    <hr>
+    <form action="">
+        <label for="">이 기사에대한 평가를 해주세요</label> <br>
+    <input type="radio" name="radio">😀좋아요
+    <input type="radio" name="radio">😥슬퍼요
+    <input type="radio" name="radio">😡화니요
+    <br>
+
+    <label for="">격려의 메시지와 후원을 받고 있습니다</label><br>
+    <label for="">닉네임</label>
+    <input type="text">
+    <label for="">비밀번호</label>
+    <input type="password"><br>
+    <textarea cols="65" rows="5" placeholder="메세지를 남겨주세요"></textarea>
+    <br>
+    <label for="">후원금 :</label>
+    <input type="number" value="0" step="1000">원
+    <p><U>1000원</U> 단위로 올라갑니다. 원하는 금액을 입력해주세요 </p>
+    <br>
+    <input type="submit" name="sub" value="제출" >
+    </form>
+
+    <hr>
+    
+    <footer>
+    <table>
+        <tr>
+            <td>회사소개</td>
+            <td>|</td>
+            <td>인재채용</td>
+            <td>|</td>
+            <td>제휴제안</td>
+            <td>|</td>
+            <td>개인정보처리방침</td>
+            <td>|</td>
+            <td>&copy;뉴스</td>
+        </tr>
+    </table>
+    </footer>
+    </main>
+    <!-- <footer><p>회사소개 | 인재채용 |제휴제안 | 개인정보처리방침 | &copy;뉴스</p></footer> 이거도가능-->
+</body>
+</html>

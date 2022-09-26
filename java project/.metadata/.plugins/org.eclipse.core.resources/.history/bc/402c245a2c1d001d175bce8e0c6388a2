@@ -1,0 +1,99 @@
+package Book;
+
+public class Book {
+	// 필드값
+	protected String title;
+	protected String author;
+	protected int page;
+	protected boolean checkOut;
+	
+	// 정적 필드
+	private static int bookCount = 0;
+	
+	public static final int MAX_BOOK = 100;
+	
+	//정적 메소드
+	public static int getBookCount() {
+		return bookCount;
+	}
+	
+	// 생성자
+	// 디폴트 생성자
+	public Book() {
+		this.title = "미정";
+		this.author = "미상";
+		this.page = 0;
+		this.checkOut = false;
+		
+		bookCount++;
+	}
+	
+	// 매개변수를 갖는 생성자
+	public Book(String title, String author, int page) {
+		this.title = title;
+		this.author = author;
+		this.page = page;
+		this.checkOut = false;
+		
+		bookCount++;
+	}
+	
+	// 메소드
+	public  boolean getCheckOut() {
+		return this.checkOut;
+	}
+	
+
+	public void setCheckOut(boolean getCheckOut) {
+		this.checkOut = getCheckOut;
+	}
+	
+	public String gettitle() {
+		return this.title;
+	}
+	public void settitle(String title) {
+		this.title=title;
+	}
+	
+	public String getauthor() {
+		return this.author;
+	}
+	public void setauthor(String author) {
+		this.author=author;
+	}
+	
+	public int getpage() {
+		return this.page;
+	}
+	public void setpage(int page) {
+		this.page=page;
+	}
+	
+	// 조건문 사용
+	// checkOut 값이 true일 때 :
+	// false로 값을 바꾸고, "책을 반납하였습니다"출력
+	// false일 때 : true로 바꾸고 "책을 대여하였습니다" 출력
+	public void isCheckOut() {
+		if(checkOut == true) {
+			checkOut = false;
+			System.out.println("책을 반납하였습니다.");
+		}else if(checkOut == false) {
+			checkOut = true;
+			System.out.println("책을 대여하였습니다.");
+		}
+	}
+	
+	// 조건문 사용
+	// checkOut이 false : "author의 title책이 현재 있습니다"
+	// checkOut이 true : "author의 title책이 대여중입니다"
+	public void printBook(){ㄴ
+		
+		if(checkOut == false) {
+			System.out.println(this.author+"의"+this.title+"책이 현재 있습니다.");
+		}else if(checkOut == true) {
+			System.out.println(this.author+"의"+this.title+"책이 대여중입니다.");
+		}
+	}
+		
+	
+}

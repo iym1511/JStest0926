@@ -1,0 +1,6 @@
+package Chap09_interface;
+
+public interface Comparable {
+	// 추상메소드
+	public int compareTo(Object otherObject);
+}

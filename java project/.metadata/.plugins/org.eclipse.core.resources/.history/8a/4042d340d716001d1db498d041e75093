@@ -1,0 +1,33 @@
+package chap07_Object;
+
+public class NumCheck {
+
+	// 실습 숫자를 입력받고 양수/음수를 알려주는 클래스
+	// 필드
+	private int num;
+	
+	// 메소드
+	// 필드값에  비교할 숫자값을 작성
+	public void setNum (int num) { 
+		this.num = num; 
+	}
+	
+	// 숫자값을 되돌려줌
+//	public int getNum() { // int는 리턴 반드시 사용
+//		return this.num;
+//	}
+	
+	// 양수, 음수, 0 비교 후 출력 메소드
+	public void checkNum() {
+		if(this.num > 0) {
+			System.out.println("양수입니다.");
+		}else if(this.num < 0){
+			System.out.println("음수입니다.");
+		}else {
+			System.out.println("0");
+		}
+	}
+	
+	
+	
+}

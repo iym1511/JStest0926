@@ -1,0 +1,13 @@
+package Bank;
+
+public class BankAccMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BankAcc Bank1 = new BankAcc("1237");
+		Bank1.inMoney(30000);
+		Bank1.outMoney(40000);
+		System.out.println(Bank1.getMoney()); // 30000
+	}
+
+}

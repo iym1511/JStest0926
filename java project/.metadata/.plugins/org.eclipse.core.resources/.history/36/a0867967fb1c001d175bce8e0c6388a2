@@ -1,0 +1,15 @@
+
+public class BoardGame extends Game{
+	
+	private int peopleNum;
+	
+	public BoardGame() {
+		this.peopleNum=0;
+	}
+	public int setBoardGame() {
+		return this.peopleNum;
+	}
+	
+	
+
+}

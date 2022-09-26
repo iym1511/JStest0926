@@ -1,0 +1,95 @@
+package Book;
+
+public class Book {
+	// 필드값
+	protected String title;
+	protected String author;
+	protected int page;
+	protected boolean checkOut;
+	
+	// 정적 필드
+	private static int bookCount = 0;
+	
+	public static final int MAX_BOOK = 100;
+	
+	//정적 메소드
+	public static int getBookCount() {
+		return bookCount;
+	}
+	
+	// 생성자
+	// 디폴트 생성자
+	public Book() {
+		this.title = "미정";
+		this.author = "미상";
+		this.page = 0;
+		this.checkOut = false;
+		
+		bookCount++;
+	}
+	
+	// 매개변수를 갖는 생성자
+	public Book(String title, String author, int page) {
+		this.title = title;
+		this.author = author;
+		this.page = page;
+
+		
+		bookCount++;
+	}
+	
+	public  boolean getCheckOut() {
+		return this.checkOut;
+	}
+	
+	public void setCheckOut(boolean getCheckOut) {
+		this.checkOut = getCheckOut;
+	}
+	
+	public String gettitle() {
+		return this.title;
+	}
+	public void settitle(String title) {
+		this.title=title;
+	}
+	
+	public String getauthor() {
+		return this.author;
+	}
+	public void setauthor(String author) {
+		this.author=author;
+	}
+	
+	public int getpage() {
+		return this.page;
+	}
+	public void setpage(int page) {
+		this.page=page;
+	}
+	
+	// 조건문 사용
+	public void isCheckOut() {
+		//boolean checkOut = getCheckOut();
+		
+		if(checkOut == true) {
+			System.out.println(!checkOut+"책을 반납하였습니다.");
+		}else if(checkOut == false) {
+			System.out.println(!checkOut+"책을 대여하였습니다.");
+		}
+	}
+	
+	// 조건문 사용
+	public void printBook(){
+		String title = gettitle();
+		String author = getauthor();
+		int page = getpage();
+		
+		if(checkOut == false) {
+			System.out.println(this.author+"의"+this.title+"책이 현재 있습니다.");
+		}else if(checkOut == true) {
+			System.out.println(this.author+"의"+this.title+"책이 대여중입니다.");
+		}
+	}
+		
+	
+}

@@ -1,0 +1,17 @@
+package Chap09_interface;
+
+public class Bus implements CarOptionInterface{
+
+	@Override // CarInterface에 있는 추상
+	public void printCar() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void carDrive() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

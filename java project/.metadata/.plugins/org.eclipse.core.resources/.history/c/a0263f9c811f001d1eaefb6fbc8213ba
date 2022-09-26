@@ -1,0 +1,15 @@
+
+public class ScoresMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+
+		Scores[] s = new Scores[5];
+		
+		MiddleSchoolScore a = new MiddleSchoolScore("홍길동", 70, 80, 90);
+		//System.out.println(a.arvg());
+		a.printArvg();
+	}
+
+}

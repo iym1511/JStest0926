@@ -1,0 +1,49 @@
+package chap07_Object;
+
+import java.util.Scanner;
+
+public class RandomUDclass {
+	
+	// 필드
+	int num; // 랜덤한 수
+	int usernum; // 유저입력 수
+	
+	// 메소드 > 랜덤UD에서 작성한 내용을 그대로 들고옴
+	void start() {
+		System.out.println("start메소드에서 진행되는 내용입니다.");
+		
+		// 1. 랜덤한 수 만듦
+		this.num = (int) (Math.random() * 100) + 1;
+		System.out.println(num);
+
+		// 2. 수를 입력받음
+		// int usernum; > 필드에 있는 usernum으로 접근 이미선언되있음
+		Scanner input = new Scanner(System.in);
+
+		while (true) {
+			System.out.println("숫자값을 입력해주세요 : ");
+			usernum = input.nextInt();
+
+			// 3. 입력받은 수와 랜덤한 수를 비교하고 결과 출력
+			if (this.usernum > this.num) {
+				// 4. 결과 출력
+				System.out.println("입력한 숫자가 더 큽니다");
+			} else if (this.usernum < this.num) {
+				System.out.println("입력하 숫자가 더 작습니다");
+			} else {
+				// usernum과 num이 같을때 while문을 빠져나옴
+				break;
+			}
+		}
+		System.out.println("정답");
+		
+	}
+	
+	// 랜덤한 숫자값을 할당
+	void getRandomNum() {
+		this.num = (int)(Math.random()*100)+1;
+	}
+	void checkUserGuess(int usernum) {
+		this.usernum = usernum;
+	}
+}

@@ -1,0 +1,18 @@
+package chap07_Object;
+
+public class RandomUD {
+
+	private int num;
+	private int usernum;
+	
+	//check user 유저한태 값받아옴 cheakNum은 값 구분
+	
+	void getRandomNum(){
+		this.num = num;
+	}
+	
+	int checkUserGuess() {
+		return this.num;
+	}
+	
+}

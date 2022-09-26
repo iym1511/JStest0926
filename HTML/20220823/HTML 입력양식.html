@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>form의 input타입</h1>
+    <h3>텍스트 입력과 비밀번호 입력</h3>    <!--autofocus : input에 포커스-->
+    <label for="">내용을 작성하세요</label>
+    <br>
+    <input type="text" name="search" value="저장">
+    <br> 
+    <input type="password" name="password">
+
+    <h3>라디오 버튼</h3>
+    <input type="radio" name="lecture" value="html" checked>HTML<br>
+    <input type="radio" name="lecture" value="css" checked>CSS<br>
+    <input type="radio" name="lecture" value="java" checked>java<br>
+    <input type="radio" name="lecture" value="C++" checked>C++<br>
+    
+    <input type="radio" name="check" value="check">확인<br><!--체크가 계속되있음-->
+    <p>
+        redio타입은 name으로 묶어서 원하는 값을 하나만 선택
+        value값을 통해서 서버로 값전달(출력)
+        화면에 표시되는것은 라디오버튼뿐이기에 뒤에 텍스트로 표기해야한다
+    </p>
+
+    <hr>
+    <h3>체크박스</h3>
+    <input type="checkbox" name="lecture" value="html"checked>HTML<br>
+    <input type="checkbox" name="lecture" value="css">CSS<br>
+    <input type="checkbox" name="lecture" value="java">java<br>
+    <input type="checkbox" name="lecture" value="C++"disabled>C++<br>
+    <!--disabled체크못하게하는거 / checked체크 되있는거 -->
+
+    <hr>
+    <h3>파일선택</h3><!--파일 불러오는거 / 이미지만-->
+    <input type="file" accept="image/*">파일선택
+
+    <hr>
+    <h3>선택입력</h3> <!--seleted : 맨위에 표시해줄 값-->
+    <select name="fruit" id="fruitshop">
+    <option value="apple">사과</option>
+    <option value="orange" selected>오렌지</option>
+    <option value="banana">바나나</option>
+    <option value="melon">멜론</option>
+    </select>
+
+    <hr>
+    <h3>텍스트에리아</h3><!--cols 가로 rows 세로 -->
+    <textarea name="message" id="msg" cols="30" rows="5">값을 넣었습니다</textarea>
+
+    <hr>
+    <h3>버튼</h3>
+    <button type="button" onclick="alert('버튼을 클릭하셨습니다')">버튼을 눌러주세요</button>
+    <button>버어튼</button>
+    <!--input 버튼을 통해서 버튼을 만들수 있다-->
+    <input type="submit" value="제출"> submit이 버튼생성
+
+    <!--form 과 함께 쓰는 input button-->
+    <form action="" method="get">
+        <label for="">이름을 작성해주세요</label>
+        <input type="text" name="name">
+        <input type="submit">
+        <button type="submit">제출</button><!--submit : 주소창 맨뒤에 ?name=(입력한값) 뜸-->
+    </form>
+    <p>
+        type submit은 form에 작성된 value값을 서버에 전달할때 사용
+        value값을 전달할때는 name의 이름에 담아서 전덜
+        form의 메소드 get은 주소를 통해서 값을 전달한다 <br>
+        ?name=value 의 형태
+    </p>
+
+    <hr>
+    <h3>필드셋</h3>
+    <fieldset>
+        <legend>입력 양식</legend>
+        이름을 입력하세요
+        <input type="text">
+        <!-- submit은 form 안에서만 form의 내용을 전송한다.-->
+        <input type="submit" value="전송"> 
+    </fieldset>
+
+
+        
+
+</body>
+</html>

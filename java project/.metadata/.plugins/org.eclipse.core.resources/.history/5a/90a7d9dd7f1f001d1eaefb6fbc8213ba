@@ -1,0 +1,26 @@
+
+public class Scores {
+	
+	protected int korean;
+	protected int math;
+	protected int english;
+	
+	
+	public Scores() {
+		this.korean=0;
+		this.math=0;
+		this.english=0;
+	}
+	public Scores(int korean, int math, int english) {
+		this.korean=korean;
+		this.math=math;
+		this.english=english;
+	}
+	public void arvg() {
+		Scores[] scorelist = { new Scores(80, 20, 60), new Scores(70, 70, 70)
+				, new Scores(80, 90, 80), new Scores(40, 60, 70)};
+		for(int i=0; i<scorelist.length; i++) {
+			System.out.println(scorelist[i]);
+		}
+	}
+}

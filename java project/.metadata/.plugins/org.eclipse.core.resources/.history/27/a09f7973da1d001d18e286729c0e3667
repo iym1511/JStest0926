@@ -1,0 +1,17 @@
+package chap08_abstract;
+
+// 추상 클래스 선언
+public abstract class Animal {
+	// 필드
+	private String name;
+	private int month;
+	
+	public void MOVE(String name, int month) {
+		this.name = name;
+		this.month = month;
+	}
+	
+	public abstract void move(String name, int month);
+	
+	
+}

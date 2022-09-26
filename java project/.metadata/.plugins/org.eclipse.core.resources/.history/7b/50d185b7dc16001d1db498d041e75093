@@ -1,0 +1,29 @@
+package chap07_Object;
+
+public class RandomUD {
+
+	private int num;
+	private int usernum;
+	
+
+	
+	void getRandomNum(int num){
+		System.out.println((Math.random()*100)+1);
+		this.num= num;
+	}
+	
+	int checkUserGuess() {
+		return this.usernum = usernum;
+	}
+	
+	void checkNum() {
+		if(this.usernum < num) {
+			System.out.println("입력받은값보다 큽니다.");
+		}else if(this.usernum > num) {
+			System.out.println("입력받은값보다 작습니다.");
+		}else {
+			System.out.println("정답입니다.");
+		}
+	}
+	
+}

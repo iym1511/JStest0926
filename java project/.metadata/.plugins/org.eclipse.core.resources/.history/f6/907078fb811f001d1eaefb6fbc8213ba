@@ -1,0 +1,15 @@
+
+public class MiddleSchoolScore extends Scores{
+	private String name;
+	
+	public MiddleSchoolScore() {
+		this.name = " ";
+	}
+	public MiddleSchoolScore(String name, int korean, int math, int english) {
+		super(korean,math,english);
+		this.name = name;
+	}
+	public void printArvg() {
+		System.out.println("name의 평균 점수 "  + (korean+math+english));
+	}
+}

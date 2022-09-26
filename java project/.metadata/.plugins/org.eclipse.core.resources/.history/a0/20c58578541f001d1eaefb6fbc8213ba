@@ -1,0 +1,17 @@
+
+public class Practice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int ex = 100;
+		if(90<ex) {
+			System.out.println("장학금 + 합격");
+		}else if(60<ex || 90<ex){
+			System.out.println("합격");
+		}else {
+			System.out.println("재시험");
+		}
+	}
+
+}

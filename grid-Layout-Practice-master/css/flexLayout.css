@@ -1,0 +1,157 @@
+*{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container{ 
+    display: flex;
+    width: 100%;
+    height:600px;
+    flex-direction: column; /*요소들을 위에서 아래로 정렬합니다. */
+}
+.body{
+    flex: 1 1 auto; /*grow, shrink, basis*/
+    display: flex; /*내용부분 가로로 만듬*/
+}
+.header{
+    border: 3px solid black;
+    /*min-height: 100px; 최소크기 고정*/
+}
+
+/*여기서 반응형 할거면 미디어 쿼리를 사용하자*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(55, 57, 83);
+    padding: 8px 12px;
+}
+a{
+    text-decoration: none;
+    color: white;
+} 
+.navbar_menu{ /*.navbar .navbar_menu 이렇게주면 display none 안먹힘 왜지?★★*/
+    display: flex;
+    margin: 0px;
+    padding-left: 0px;
+}
+.navbar_menu li{
+    padding: 8px 30px; /*여백 조절함*/
+    transition: 0.5s;
+}
+.navbar_menu li:hover{
+    background-color: cornflowerblue;
+}
+.navbar_icons{
+    display: flex;
+}
+.navbar_icons i{
+    padding:5px 10px;
+    color: white;
+}
+.navbar_toggleBtn{
+    display: none;
+}
+@media screen and (max-width:1020px) {
+    .navbar{
+        flex-direction: column; /*위에서 아래로 정렬*/
+        align-items: flex-start; /*왼쪽에 붙음*/
+    }
+    .navbar_menu{
+        flex-direction: column;
+        align-items: center; /*세로 중간정렬*/
+        width: 100%; /*크기를 100%해주고 center잡자*/
+        display: none; /*안보이게 가림*/
+    }
+    .navbar_menu li{
+        width: 100%; 
+        text-align: center; /*안보이게 가림*/
+    }
+    .navbar_icons{
+        width: 100%;
+        justify-content: center;
+        margin-top: 15px;
+        display: none; /*안보이게 가림*/
+    }
+    .navbar_toggleBtn{
+        display: block; /*none을 보여주게함*/
+        position: absolute; /*부모기준으로 하기떔에 좌측상단에 붙음*/
+        right: 32px;
+        top: 17px;
+        transition: 0.5s;
+        font-size: 25px;
+    }
+    .navbar_toggleBtn:hover{
+        color: rgb(126, 126, 126);
+    }
+
+    /*js 사용*/
+    .navbar_toggleBtn{
+        display: block; /*토글 시 보이게함*/
+    }
+    .navbar_menu.active,
+    .navbar_icons.active{ /*눌러줌*/
+        display: flex; /*정렬*/
+    }
+    .center{ /*중심부의 내용을 다시한번 flex로해서 잡아줌*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        justify-content: center;
+        flex-wrap: wrap;
+        border: 1px solid black;
+        flex: 5; /*몇대몇으로할지 비율을잡아줌*/
+    }
+}
+
+
+.left{
+    border: 1px solid black;
+    flex: 1; /*몇대몇으로할지 비율을잡아줌*/
+}
+.center{ /*중심부의 내용을 다시한번 flex로해서 잡아줌*/
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    flex: 5; /*몇대몇으로할지 비율을잡아줌*/
+}
+.center .aticle1{
+    border: 1px solid purple;
+    width: 200px; 
+    height: 100px;
+    margin: 10px;
+
+}
+.center .aticle2{
+    border: 1px solid purple;
+    width: 200px; 
+    height: 100px;
+    margin: 10px;
+
+}
+.center .aticle3{
+    border: 1px solid purple;
+    width: 200px; 
+    height: 100px;
+    margin: 10px;
+
+}
+.center .aticle4{
+    border: 1px solid purple;
+    width: 200px; 
+    height: 100px;
+    margin: 10px;
+
+}
+.right{
+    border: 1px solid black;
+    flex: 1; /*몇대몇으로할지 비율을잡아줌*/
+}
+.footer{
+    border: 1px solid black;
+    min-height: 100px; /*최소크기 고정*/
+}

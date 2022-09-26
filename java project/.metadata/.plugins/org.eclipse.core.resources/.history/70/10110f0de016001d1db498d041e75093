@@ -1,0 +1,36 @@
+package chap07_Object;
+
+import java.util.Scanner;
+
+public class RandomUD {
+
+	// 랜덤 업다운 게임 1~100
+	// 1. 랜덤한 수가 만들어짐
+	// 2. 수를 입력 받음
+	// 3. 입력받은 수를 랜덤한 수와 비교 결과를 알려줌
+	// 4. 결과에 따라서 크다, 작다 를 알려주고
+	// 5. 같다면 게임 끝
+	private int num;
+	private int usernum;
+	
+
+	
+	void getRandomNum(int num){
+		this.num = (int)(Math.random()*100)+1;
+	}
+	
+	int checkUserGuess(int usernum) {
+		return this.usernum = usernum;
+	}
+	
+	void checkNum() {
+		if(usernum < this.num) {
+			System.out.println("입력받은값보다 작습니다.");
+		}else if(usernum > this.num) {
+			System.out.println("입력받은값보다 큽니다.");
+		}else {
+			System.out.println("정답입니다.");
+		}
+	}
+	
+}

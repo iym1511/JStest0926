@@ -1,0 +1,12 @@
+
+public class BoardGame {
+	
+	private int peopleNum;
+	
+	public BoardGame() {
+		this.peopleNum=0;
+	}
+	public int setBoardGame(int peopleNum) {
+		return this.peopleNum;
+	}
+}
