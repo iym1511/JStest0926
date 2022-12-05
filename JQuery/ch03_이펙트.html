@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous"></script> 
+    <title>Document</title>
+    <style>
+        #my-box{
+            width: 100px;
+            height: 100px;
+            background-color: midnightblue;
+            border: 3px solid red;
+        }
+        #slide-box{
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(88, 31, 110);
+            border: 3px solid rgb(238, 182, 255);
+        }
+    </style>
+</head>
+<body>
+    <button id="title-btn">btn</button>
+    <h1 id="title">안녕하세요</h1>
+    
+    <button id="title-btn2">btn2</button>
+    <div id="title-2">
+        <p>안녕하세요안녕하세요안녕하세요</p>
+        <p>안녕하세요안녕하세요안녕하세요</p>
+    </div>
+    <br><br>
+
+    <button id="box-fade">버튼에 마우스를 올리면 상자가 나타나고 사라집니다</button>
+    <div id="my-box"></div>
+
+    <button id="box-slide">슬라이드로 나타나기</button>
+    <div id="slide-box"></div>
+
+    <script>
+        $("#title-btn").on("click", function(){
+            $("#title").toggle("fast"); // 빠르게 사라짐
+        });
+
+        // 요소의 표시와 숨김 실습
+        // 시작할때 안보이게 버튼을누르면 숨겨지고 나타날수 있게
+        // 가능하면 처음효과는 html에서 이후의효과만 js에서
+        // + : 바로뒤의 하나요소
+        $("#title-btn2+div").hide();
+        $("#title-btn2").on("click", function(){
+            $(this).next().toggle("slow");
+        });
+
+        // 페이드 효과 실습
+        
+        $("#box-fade").on("mouseenter mouseleave", function(){
+            $(this).next().fadeToggle("fast");
+        });
+
+
+        // 슬라이드 효과 실습
+        // slideToggle()을 이용항 ㅕ버튼을클릭하면 나타나고 사라짐
+        $("#box-slide").on("click", function(){
+            $(this).next().slideToggle("fast");
+        });
+
+        
+    </script>
+</body>
+</html>

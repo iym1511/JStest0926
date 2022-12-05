@@ -1,0 +1,87 @@
+body{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+canvas{
+    width: 800px;
+    height: 800px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.btns{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.color-options{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.color-option{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid whitesmoke;
+    cursor : pointer; /*커서 모양변경*/
+    transition: transform ease-in-out .3s; /*마우스 대면 확대효과*/
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.color-option:hover{
+    transform: scale(1.2); /*눌럿을떄 확대효과*/
+}
+
+input#color{
+    background-color: white;
+    border:7px solid rgb(255, 255, 255);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+button, label{
+    all:unset; /*CSS 속성을 전부 제거   / 버튼모양 제거 텍스트만남음*/
+    padding: 10px 0px;
+    text-align: center;
+    background-color: rgb(27, 93, 216); 
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: opacity linear .3s;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+ }
+ button:hover{
+    opacity: 0.8;
+ }
+ label:hover{
+    opacity: 0.8;
+ }
+input#file{
+    display: none; /*파일선택버튼, 선택된파일 없음 텍스트 (둘다 없애줌)*/
+}
+
+ input#text {
+    all: unset;
+    padding: 10px 0px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+ }
