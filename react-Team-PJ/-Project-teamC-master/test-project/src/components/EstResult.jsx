@@ -24,6 +24,7 @@ const EstResult = () => {
     <div>
       <div className="estresult-Wrapper">
         <div className="estresult-Header">간편 견적 </div>
+
         <div className="estresult-Contents">
           <div className="estresult-Title">결과 보기</div>
           <div className="estresult-LogoImage">
